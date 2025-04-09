@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Demo</title>
+</head>
+<body>
+    <h1>Welcome to the Chatbot Demo</h1>
+    
+    <!-- Widget Configuration -->
+    <script>
+        window.ChatWidgetConfig = {
+            webhook: {
+                url: 'https://chatbots.infinitysky.ai/webhook/445df409-5b14-4f24-a136-7d597757a6a9/chat',
+                route: 'general'
+            },
+            branding: {
+                logo: 'https://storage.googleapis.com/msgsndr/p63uHpdE5EEoJzPr3G41/media/669fb2be7ac84976d85f7b74.jpeg',
+                name: 'Kitchener Hypnosis',
+                welcomeText: 'Hi 👋, how can we help?',
+                responseTimeText: 'Book a free screening, ask a question, or message Frank directly',
+                poweredBy: {
+                    text: 'Powered by InfinitySkyAi',
+                    link: 'https://infinitysky.ai'
+                }
+            },
+            style: {
+                primaryColor: '#59b3ea',
+                secondaryColor: '#59b3ea',
+                position: 'right',
+                backgroundColor: '#ffffff',
+                fontColor: '#333333'
+            }
+        };
+    </script>
+    <script src="./chatbot.js"></script>
+</body>
+</html>
+    

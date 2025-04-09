@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Widget Demo</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f5f8fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        .feature-list li::before {
+            content: "✓";
+            color: #59b3ea;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Chatbot Widget Demo</h1>
+            <p>This page demonstrates the InfinitySkyAI Chatbot Widget. You can interact with the chat widget by clicking the chat icon in the bottom right corner.</p>
+            
+            <p>Features of this widget:</p>
+            <ul class="feature-list">
+                <li>Modern, clean design with smooth animations</li>
+                <li>Customizable colors, positioning, and branding</li>
+                <li>Typing indicators to show when responses are being generated</li>
+                <li>Responsive layout that works on all devices</li>
+                <li>Auto-resizing text input</li>
+                <li>Error handling and connectivity detection</li>
+                <li>Support for multiple message formats</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>How to Use on Your Website</h2>
+            <p>Add the following code to your website's HTML:</p>
+            <pre><code>&lt;!-- Widget Configuration --&gt;
+&lt;script&gt;
+    window.ChatWidgetConfig = {
+        webhook: {
+            url: 'YOUR_WEBHOOK_URL',
+            route: 'general'
+        },
+        branding: {
+            logo: 'YOUR_LOGO_URL',
+            name: 'Your Company Name',
+            welcomeText: 'Hi 👋, how can we help?',
+            responseTimeText: 'We typically respond right away',
+            poweredBy: {
+                text: 'Powered by InfinitySkyAi',
+                link: 'https://infinitysky.ai'
+            }
+        },
+        style: {
+            primaryColor: '#59b3ea',
+            secondaryColor: '#59b3ea',
+            position: 'right',
+            backgroundColor: '#ffffff',
+            fontColor: '#333333'
+        }
+    };
+&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/infinity-sky-ai/Chatbot-Widget-Build@main/chatbot.js"&gt;&lt;/script&gt;</code></pre>
+        </div>
+    </div>
+
+    <!-- Widget Configuration -->
+    <script>
+        window.ChatWidgetConfig = {
+            webhook: {
+                url: 'https://chatbots.infinitysky.ai/webhook/445df409-5b14-4f24-a136-7d597757a6a9/chat',
+                route: 'general'
+            },
+            branding: {
+                logo: 'https://storage.googleapis.com/msgsndr/p63uHpdE5EEoJzPr3G41/media/669fb2be7ac84976d85f7b74.jpeg',
+                name: 'InfinitySkyAI',
+                welcomeText: 'Hi 👋, how can we help?',
+                responseTimeText: 'We typically respond right away',
+                poweredBy: {
+                    text: 'Powered by InfinitySkyAI',
+                    link: 'https://infinitysky.ai'
+                }
+            },
+            style: {
+                primaryColor: '#59b3ea',
+                secondaryColor: '#59b3ea',
+                position: 'right',
+                backgroundColor: '#ffffff',
+                fontColor: '#333333'
+            }
+        };
+    </script>
+    <script src="./chatbot.js"></script>
+</body>
+</html> 
